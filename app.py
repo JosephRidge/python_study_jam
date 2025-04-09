@@ -204,7 +204,7 @@ userEmail =''
 userName =""
 
 if len(userEmail) ==0:
-    userEmail = input("Enter your email: ")
+    # userEmail = input("Enter your email: ")
     output = "Enter Email address"
 elif userEmail and userName:
     output = "Enter username"
@@ -212,7 +212,6 @@ else:
     output = "What is going on!"
 
 userEmailLength = len(userEmail) >= 9
-print(userEmailLength)
 match userEmailLength:
     case True:
         output = "Enter your email!"
@@ -222,17 +221,47 @@ match userEmailLength:
         output = "we can proceed to validation"
 
 
+"""
+COMBINED PROBLEM SOLVING SESSION
+================================================
+Task
+Given an integer, , perform the following conditional actions:
 
+If  is odd, print Weird
+If  is even and in the inclusive range of 2 to 5 , print Not Weird
+If  is even and in the inclusive range of 6 to 20, print Weird
+If  is even and greater than 20, print Not Weird
 
+"""
+number = -50
+if number%2 != 0: # checks if even
+    output = "odd n Weird..."
+elif number%2 == 0 and number <=5 and number>=2:
+    output = "Not Weird but between 2 and 5"
+elif number %2 == 0   and number >=6 and number <=20:
+    output = "Weird but between 6 and 20"
+elif number %2 ==0  and number >=-200 and number <=0:
+    output = "Weird and plainly even! BUT -VE"
+elif number >20:
+    output = "Not Weird but greater than 20"
+else:
+    output = "let me get back to you!"
 print("=================================")
-print(f"{output}, EMAIL: {userEmail}")
+print(f"NUMBER:{number}, {output}")
 print("=================================")
 
 
 
 
+"""
+- variables ( data types: int, double, strings, lists, tuples, dictionary) 
+- arithmetic operators ( /, *, +, -, //, **)
+- boolean operators ( not, and, or) 
+--------------------------------------------------------------------------
+- control flows : if...else, if...elif...else, match...case...case _
+-
 
-
+"""
 
 
 
